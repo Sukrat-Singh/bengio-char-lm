@@ -35,10 +35,9 @@ The model predicts the next word $w_t$ given the context of $n-1$ previous words
 3.  **Hidden Layer:** $h = \tanh(Hx + b_h)$.
 4.  **Output Logits:** $y = b + Wx + Uh$.
   - *Note*: ${Wx}$ is a direct linear connection from input to output.
-5.  **Softmax:** 
-  $$
-  P(w_t = i) = \frac{e^{y_i}}{\sum e^{y_j}}
-  $$
+5.  **Softmax:**
+    
+    $P(w_t = i) = \frac{e^{y_i}}{\sum e^{y_j}}$.
 
 ---
 
@@ -53,7 +52,7 @@ Let $e = p - \mathbf{1}_{\text{target}}$ be the error at the output layer.
 * **Hidden Layer:** $\delta_h = (1 - h^2) \odot (U^\top e)$.
 * **Hidden Weights:** $\frac{\partial \mathcal{L}}{\partial H} = \delta_h x^\top$.
 * **Embedding Gradients:** $\frac{\partial \mathcal{L}}{\partial x} = W^\top e + H^\top \delta_h$.
-    * *The result is sliced to update specific rows in ${C}$.*
+    * The result is sliced to update specific rows in ${C}$.
 
 ---
 
