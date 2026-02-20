@@ -118,3 +118,9 @@ When he heardiend
 ```
 
 ---
+
+### Author
+
+**Sukrat Singh**
+<br>
+email: 24je0702@iitism.ac.in
