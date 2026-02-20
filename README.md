@@ -16,8 +16,8 @@ bengio-char-lm/
 ├── utils.py
 ├── train.py
 ├── generate.py
-├── checkpoints/            # saved model weights
-├── notebooks/             # experimental notebook
+├── exp_nb.ipynb           # experiment notebook 
+├── checkpoints/           # saved model weights
 └── samples/               # sample outputs
 ```
 
